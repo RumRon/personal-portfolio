@@ -1910,38 +1910,60 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* Rui palette — blush pink, warm ivory, pale aqua and sea glass.
-   Selected colors: #f6d0d9 #fbeae7 #cfeaec #93c9c3.
-   Dark surfaces maintain readability while the four colors provide the identity. */
+/* Rui's light pastel theme — original four accent colors retained.
+   #f6d0d9 blush | #fbeae7 warm ivory | #cfeaec pale aqua | #93c9c3 sea glass
+   Derived darker text/link tones are used for accessible contrast. */
 :root {
   --palette-slate: #93c9c3;
   --palette-ivory: #fbeae7;
   --palette-mist: #cfeaec;
   --palette-taupe: #f6d0d9;
 
-  --smoky-black: #182b2d;
-  --eerie-black-2: #22383a;
-  --eerie-black-1: #2a4344;
-  --onyx: #355051;
-  --jet: #638b89;
-  --white-1: #fbeae7;
-  --white-2: #fbeae7;
-  --light-gray: #dcebed;
-  --light-gray-70: #cfeaec;
-  --orange-yellow-crayola: #f6d0d9;
-  --vegas-gold: #93c9c3;
-  --bg-gradient-onyx: linear-gradient(135deg, #507a77, #355051);
-  --bg-gradient-jet: linear-gradient(135deg, #355051, #22383a);
-  --bg-gradient-yellow-1: linear-gradient(135deg, #f6d0d9, transparent);
-  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(246,208,217,.20), transparent), #2a4344;
-  --border-gradient-onyx: linear-gradient(135deg, #93c9c3, #355051);
-  --text-gradient-yellow: linear-gradient(90deg, #f6d0d9, #cfeaec);
+  --smoky-black: #fbeae7;          /* page background */
+  --eerie-black-2: #fffaf8;        /* main reading panels */
+  --eerie-black-1: #f0f8f7;        /* nested panels */
+  --onyx: #dceeed;                 /* lighter surface */
+  --jet: #c3dedb;                  /* fine separators and borders */
+  --white-1: #263e40;             /* primary legible text */
+  --white-2: #263e40;
+  --light-gray: #435d60;          /* body text */
+  --light-gray-70: #617c7e;       /* secondary text */
+  --orange-yellow-crayola: #346b67; /* contrast-safe link / emphasis */
+  --vegas-gold: #346b67;
+  --bg-gradient-onyx: linear-gradient(135deg,#cfeaec,#f6d0d9);
+  --bg-gradient-jet: linear-gradient(135deg,#fffaf8,#f3fbfa);
+  --bg-gradient-yellow-1: linear-gradient(135deg,#f6d0d9,#fbeae7);
+  --bg-gradient-yellow-2: linear-gradient(135deg,#f6d0d9,#fffaf8);
+  --border-gradient-onyx: linear-gradient(135deg,#edf7f6,#fbeae7);
+  --text-gradient-yellow: linear-gradient(90deg,#346b67,#4f8c87);
+  --shadow-1: 0 8px 24px rgba(66,91,91,.09);
+  --shadow-2: 0 12px 25px rgba(66,91,91,.11);
+  --shadow-3: 0 16px 38px rgba(66,91,91,.12);
+  --shadow-4: 0 18px 35px rgba(66,91,91,.1);
+  --shadow-5: 0 20px 65px rgba(66,91,91,.12);
 }
 
-.navbar { background: rgba(34,56,58,.94); }
+body { color: var(--white-2); }
+.sidebar, article { border-color: #d4e6e3; }
+.navbar {
+  background: rgba(251,234,231,.96);
+  border-color: #e4dcd8;
+}
+.navbar-link { color: #435d60; }
 .navbar-link.active,
 .navbar-link:hover,
-.navbar-link:focus-visible { color: #f6d0d9; }
+.navbar-link:focus-visible { color: #28645f; }
+.navbar-link.active { font-weight: 600; }
+.info-content .title { background: #cfeaec; color: #263e40; }
+.icon-box::before { background: #fffaf8; }
+.social-item .social-link:hover { color: #28645f; }
+.game-group, .personal-interests .interest-category {
+  border-color: #c4dedb;
+}
+::selection { background: #f6d0d9; color: #263e40; }
 @media (min-width: 1024px) {
-  .main-content > .navbar { background: rgba(34,56,58,.96); }
+  .main-content > .navbar {
+    background: rgba(251,234,231,.97);
+    border-color: #e4dcd8;
+  }
 }
