@@ -1885,11 +1885,18 @@ textarea.form-input::-webkit-resizer { display: none; }
    Prevent long tab labels from covering headings. */
 @media (min-width: 1024px) {
   .main-content > .navbar {
-    position: relative;
-    inset: auto;
+    position: sticky;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    z-index: 20;
     width: 100%;
     border-radius: 20px 20px 0 0;
     padding: 8px 12px;
+    background: hsla(240, 1%, 17%, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
   }
   .main-content > .navbar .navbar-list {
     flex-wrap: wrap;
