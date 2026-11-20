@@ -55,6 +55,56 @@
 .pet-card img { display: block; width: 100%; height: auto; max-height: none; object-fit: contain; object-position: center; }
 @media (max-width: 600px) { .pet-gallery { grid-template-columns: 1fr; } }
 </style>
+
+<style>
+/* Personal Interests: top-level sections closed until explicitly opened. */
+.personal-interests .interest-category {
+  background: var(--border-gradient-onyx);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.personal-interests .interest-category > summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  list-style: none;
+  padding: 20px 22px;
+  color: var(--white-2);
+  font-size: var(--fs-2);
+  font-weight: 600;
+}
+.personal-interests .interest-category > summary::-webkit-details-marker { display: none; }
+.personal-interests .interest-category > summary small {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.personal-interests .interest-category > summary::after {
+  content: "+";
+  font-size: 24px;
+  color: var(--orange-yellow-crayola);
+  line-height: 1;
+}
+.personal-interests .interest-category[open] > summary::after { content: "−"; }
+.personal-interests .interest-category > summary:focus-visible {
+  outline: 2px solid var(--orange-yellow-crayola);
+  outline-offset: -4px;
+}
+.personal-interests .interest-category-body {
+  padding: 4px 20px 20px;
+}
+.personal-interests .interest-category-body > .about-text {
+  margin-bottom: 18px;
+}
+.personal-interests .service { margin-bottom: 18px; }
+@media (max-width: 580px) {
+  .personal-interests .interest-category > summary { padding: 16px; font-size: 18px; }
+  .personal-interests .interest-category-body { padding: 0 14px 16px; }
+}
+</style>
 </head>
 
 <body>
@@ -410,33 +460,33 @@
       <article class="personal-interests" data-page="personal interests">
         <header><h2 class="h2 article-title">Beyond Research</h2></header>
         <section class="about-text"><p>A collection of places, pets, books, movies, and games I enjoy. I will keep adding photos, favorites, and stories over time.</p></section>
-        <section class="service"><h3 class="h3 service-title">Cities Through My Eyes</h3><div class="about-text"><p>A growing collection of cities, photographs, and personal observations.</p></div><ul class="service-list"><li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Gainesville, FL</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
+        <section class="service"><details class="interest-category"><summary><span>Cities Through My Eyes</span><small>7 cities</small></summary><div class="interest-category-body"><div class="about-text"><p>A growing collection of cities, photographs, and personal observations.</p></div><ul class="service-list"><li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Gainesville, FL</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
 <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Philadelphia, PA</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
 <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Lancaster, PA</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
 <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Boston, MA</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
 <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Shanghai, China</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
 <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Wenzhou, China</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li>
-<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Taiyuan, China</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li></ul></section>
-      <section class="service"><h3 class="h3 service-title">Pets</h3><div class="about-text"><p>Meet the pets who have been part of my life.</p></div><ul class="pet-gallery"><li class="pet-card"><img src="https://rumron.github.io/images/Kuro.jpeg" alt="Kuro" loading="lazy"><div><h4>Kuro</h4><p>My Shiba Inu. <a href="https://www.instagram.com/kuro.21_/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></p></div></li>
+<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Taiyuan, China</h4><p class="service-item-text">Photos and personal city notes coming soon.</p></div></li></ul></div></details></section>
+      <section class="service"><details class="interest-category"><summary><span>Pets</span><small>4 companions</small></summary><div class="interest-category-body"><div class="about-text"><p>Meet the pets who have been part of my life.</p></div><ul class="pet-gallery"><li class="pet-card"><img src="https://rumron.github.io/images/Kuro.jpeg" alt="Kuro" loading="lazy"><div><h4>Kuro</h4><p>My Shiba Inu. <a href="https://www.instagram.com/kuro.21_/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></p></div></li>
 <li class="pet-card"><img src="https://rumron.github.io/images/Rumble.jpeg" alt="Rumble" loading="lazy"><div><h4>Rumble</h4></div></li>
 <li class="pet-card"><img src="https://rumron.github.io/images/lucky.jpeg" alt="Lucky" loading="lazy"><div><h4>Lucky</h4><p>In loving memory ♡</p></div></li>
-<li class="pet-card"><img src="https://rumron.github.io/images/wawa.jpeg" alt="Wawa" loading="lazy"><div><h4>Wawa</h4><p>In loving memory ♡</p></div></li></ul></section>
-<section class="service" id="interest-books"><h3 class="h3 service-title">Books</h3>
+<li class="pet-card"><img src="https://rumron.github.io/images/wawa.jpeg" alt="Wawa" loading="lazy"><div><h4>Wawa</h4><p>In loving memory ♡</p></div></li></ul></div></details></section>
+<section class="service" id="interest-books"><details class="interest-category"><summary><span>Books</span><small>Reading list</small></summary><div class="interest-category-body">
 <div class="about-text"><p>Books I love and titles on my reading list. Reviews and favorites will be added here.</p></div>
 <details class="game-group"><summary>Reading List <span class="game-count">Coming soon</span></summary><p class="game-legend">Book titles, cover images, and notes will be added gradually.</p></details>
-</section>
-<section class="service" id="interest-movies"><h3 class="h3 service-title">Movies</h3>
+</div></details></section>
+<section class="service" id="interest-movies"><details class="interest-category"><summary><span>Movies</span><small>Watchlist</small></summary><div class="interest-category-body">
 <div class="about-text"><p>Favorite films, memorable stories, and movies I want to watch.</p></div>
 <details class="game-group"><summary>Movie Collection <span class="game-count">Coming soon</span></summary><p class="game-legend">Film titles, posters, and personal notes will be added gradually.</p></details>
-</section>
-<section class="service"><h3 class="h3 service-title">Gaming</h3>
+</div></details></section>
+<section class="service"><details class="interest-category"><summary><span>Gaming</span><small>Game library</small></summary><div class="interest-category-body">
 <div class="about-text"><p>A growing collection of games I enjoy — from single-player adventures and co-op games to MMORPGs.</p></div>
 <div class="game-current"><span>Currently Playing</span><strong>GTA 6</strong></div>
 <p class="game-legend">🏆 = All achievements unlocked</p>
 <details class="game-group"><summary>Single-player Games<span class="game-count">3 games</span></summary><ul class="game-list"><li><span>Phantom Blade Zero</span><span class="game-trophy" title="All achievements unlocked" aria-label="All achievements unlocked">🏆 <span class="trophy-label">100% achievements</span></span></li><li><span>Slay the Spire II</span></li><li><span>Cyberpunk 2077</span></li></ul></details>
 <details class="game-group"><summary>Multiplayer Games<span class="game-count">7 games</span></summary><ul class="game-list"><li><span>Monster Hunter: Rise</span></li><li><span>Overwatch</span></li><li><span>PUBG</span></li><li><span>Stardew Valley</span></li><li><span>Remnant 2</span><span class="game-trophy" title="All achievements unlocked" aria-label="All achievements unlocked">🏆 <span class="trophy-label">100% achievements</span></span></li><li><span>Abiotic Factor</span></li><li><span>Minecraft Dungeons II</span></li></ul></details>
 <details class="game-group"><summary>MMORPG<span class="game-count">3 games</span></summary><ul class="game-list"><li><span>Final Fantasy XIV</span></li><li><span>MapleStory</span></li><li><span>JX3 Online (剑网3)</span></li></ul></details>
-</section>
+</div></details></section>
 </article>
 
 
