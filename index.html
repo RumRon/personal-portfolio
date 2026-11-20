@@ -48,6 +48,12 @@
 .pet-card{padding:0}.pet-card img{width:100%;height:230px;object-fit:cover;background:var(--onyx)}
 .pet-card div{padding:14px 16px}
 .legacy-capstone img{width:100%;height:auto;border-radius:12px}
+
+/* Show all four pets in two columns without cropping original photos. */
+.pet-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.pet-card { min-width: 0; }
+.pet-card img { display: block; width: 100%; height: auto; max-height: none; object-fit: contain; object-position: center; }
+@media (max-width: 600px) { .pet-gallery { grid-template-columns: 1fr; } }
 </style>
 </head>
 
@@ -94,7 +100,7 @@
 
         <div class="separator"></div>
 
-        <ul class="social-list"><li class="social-item"><a class="social-link" href="https://github.com/RumRon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li></ul>
+        <ul class="social-list"><li class="social-item"><a class="social-link" href="https://github.com/RumRon" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><ion-icon name="logo-github"></ion-icon></a></li><li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/rui21/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li></ul>
 
       </div>
 
