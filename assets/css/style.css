@@ -1910,39 +1910,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* Rui palette experiment — slate / ivory / mist / taupe.
-   Keep the site's dark layout while replacing its yellow-gray scheme.
-   Main brand colors: #51697c, #f2f2ee, #aab7c2, #b79d88. */
+/* Rui palette — muted blue, mist, ivory and warm sand.
+   Requested palette: #607e95, #a8c3d6, #f3eee8, #e2d0bc. */
 :root {
-  --palette-slate: #51697c;
-  --palette-ivory: #f2f2ee;
-  --palette-mist: #aab7c2;
-  --palette-taupe: #b79d88;
+  --palette-slate: #607e95;
+  --palette-ivory: #f3eee8;
+  --palette-mist: #a8c3d6;
+  --palette-taupe: #e2d0bc;
 
-  --smoky-black: #19252e;
-  --eerie-black-2: #24343f;
-  --eerie-black-1: #2c3d49;
-  --onyx: #344957;
-  --jet: #51697c;
-  --white-1: #f2f2ee;
-  --white-2: #f2f2ee;
-  --light-gray: #d5dce0;
-  --light-gray-70: #aab7c2;
-  --orange-yellow-crayola: #cdb59f;
-  --vegas-gold: #b79d88;
-  --bg-gradient-onyx: linear-gradient(135deg, #51697c, #344957);
-  --bg-gradient-jet: linear-gradient(135deg, #344957, #263845);
-  --bg-gradient-yellow-1: linear-gradient(135deg, #b79d88, transparent);
-  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(183,157,136,.23), transparent), #2c3d49;
-  --border-gradient-onyx: linear-gradient(135deg, #51697c, #344957);
-  --text-gradient-yellow: linear-gradient(90deg, #b79d88, #d2baa6);
+  --smoky-black: #1b2a35;
+  --eerie-black-2: #273b49;
+  --eerie-black-1: #324959;
+  --onyx: #3b5365;
+  --jet: #607e95;
+  --white-1: #f3eee8;
+  --white-2: #f3eee8;
+  --light-gray: #d3e1e8;
+  --light-gray-70: #a8c3d6;
+  --orange-yellow-crayola: #e2d0bc;
+  --vegas-gold: #e2d0bc;
+  --bg-gradient-onyx: linear-gradient(135deg, #607e95, #3b5365);
+  --bg-gradient-jet: linear-gradient(135deg, #3b5365, #273b49);
+  --bg-gradient-yellow-1: linear-gradient(135deg, #e2d0bc, transparent);
+  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(226,208,188,.2), transparent), #324959;
+  --border-gradient-onyx: linear-gradient(135deg, #607e95, #3b5365);
+  --text-gradient-yellow: linear-gradient(90deg, #e2d0bc, #f3eee8);
 }
 
-/* Surfaces and controls using hard-coded vCard defaults. */
-.navbar { background: rgba(36,52,63,.94); }
+.navbar { background: rgba(39,59,73,.94); }
 .navbar-link.active,
 .navbar-link:hover,
-.navbar-link:focus-visible { color: #d2baa6; }
+.navbar-link:focus-visible { color: #e2d0bc; }
 @media (min-width: 1024px) {
-  .main-content > .navbar { background: rgba(36,52,63,.96); }
+  .main-content > .navbar { background: rgba(39,59,73,.96); }
 }
