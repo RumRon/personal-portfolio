@@ -1910,37 +1910,38 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* Rui palette — muted blue, mist, ivory and warm sand.
-   Requested palette: #607e95, #a8c3d6, #f3eee8, #e2d0bc. */
+/* Rui palette — blush pink, warm ivory, pale aqua and sea glass.
+   Selected colors: #f6d0d9 #fbeae7 #cfeaec #93c9c3.
+   Dark surfaces maintain readability while the four colors provide the identity. */
 :root {
-  --palette-slate: #607e95;
-  --palette-ivory: #f3eee8;
-  --palette-mist: #a8c3d6;
-  --palette-taupe: #e2d0bc;
+  --palette-slate: #93c9c3;
+  --palette-ivory: #fbeae7;
+  --palette-mist: #cfeaec;
+  --palette-taupe: #f6d0d9;
 
-  --smoky-black: #1b2a35;
-  --eerie-black-2: #273b49;
-  --eerie-black-1: #324959;
-  --onyx: #3b5365;
-  --jet: #607e95;
-  --white-1: #f3eee8;
-  --white-2: #f3eee8;
-  --light-gray: #d3e1e8;
-  --light-gray-70: #a8c3d6;
-  --orange-yellow-crayola: #e2d0bc;
-  --vegas-gold: #e2d0bc;
-  --bg-gradient-onyx: linear-gradient(135deg, #607e95, #3b5365);
-  --bg-gradient-jet: linear-gradient(135deg, #3b5365, #273b49);
-  --bg-gradient-yellow-1: linear-gradient(135deg, #e2d0bc, transparent);
-  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(226,208,188,.2), transparent), #324959;
-  --border-gradient-onyx: linear-gradient(135deg, #607e95, #3b5365);
-  --text-gradient-yellow: linear-gradient(90deg, #e2d0bc, #f3eee8);
+  --smoky-black: #182b2d;
+  --eerie-black-2: #22383a;
+  --eerie-black-1: #2a4344;
+  --onyx: #355051;
+  --jet: #638b89;
+  --white-1: #fbeae7;
+  --white-2: #fbeae7;
+  --light-gray: #dcebed;
+  --light-gray-70: #cfeaec;
+  --orange-yellow-crayola: #f6d0d9;
+  --vegas-gold: #93c9c3;
+  --bg-gradient-onyx: linear-gradient(135deg, #507a77, #355051);
+  --bg-gradient-jet: linear-gradient(135deg, #355051, #22383a);
+  --bg-gradient-yellow-1: linear-gradient(135deg, #f6d0d9, transparent);
+  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(246,208,217,.20), transparent), #2a4344;
+  --border-gradient-onyx: linear-gradient(135deg, #93c9c3, #355051);
+  --text-gradient-yellow: linear-gradient(90deg, #f6d0d9, #cfeaec);
 }
 
-.navbar { background: rgba(39,59,73,.94); }
+.navbar { background: rgba(34,56,58,.94); }
 .navbar-link.active,
 .navbar-link:hover,
-.navbar-link:focus-visible { color: #e2d0bc; }
+.navbar-link:focus-visible { color: #f6d0d9; }
 @media (min-width: 1024px) {
-  .main-content > .navbar { background: rgba(39,59,73,.96); }
+  .main-content > .navbar { background: rgba(34,56,58,.96); }
 }
