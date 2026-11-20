@@ -37,6 +37,18 @@
 .trophy-label{font-size:11px}
 @media(max-width:480px){.game-list li{align-items:flex-start;flex-direction:column;gap:4px}}
 </style>
+<style>
+.legacy-projects,.pet-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:20px}
+.legacy-project,.pet-card{background:var(--border-gradient-onyx);border:1px solid var(--jet);border-radius:16px;padding:16px;overflow:hidden}
+.legacy-project a,.pet-card a,.project-extra a{color:var(--orange-yellow-crayola)}
+.legacy-project img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:12px}
+.legacy-project h4,.pet-card h4{color:var(--white-2);font-size:16px;line-height:1.4;margin-bottom:6px}
+.legacy-project span,.pet-card p{color:var(--light-gray);font-size:13px;line-height:1.6}
+.project-extra{font-size:12px;line-height:1.8;margin-top:12px}
+.pet-card{padding:0}.pet-card img{width:100%;height:230px;object-fit:cover;background:var(--onyx)}
+.pet-card div{padding:14px 16px}
+.legacy-capstone img{width:100%;height:auto;border-radius:12px}
+</style>
 </head>
 
 <body>
@@ -353,16 +365,22 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="research"><header><h2 class="h2 article-title">Research &amp; Selected Projects</h2></header>
-<section class="about-text"><p>Previously completed research and selected coursework projects. Current doctoral research is intentionally excluded until publication.</p></section>
-<section class="service"><h3 class="h3 service-title">Previous Research</h3><ul class="service-list"><li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Delaware River Water Quality & Recreational Suitability</h4><p class="service-item-text">GIS and spatial analysis with The Water Center at the University of Pennsylvania.</p></div></li>
-<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">GIS-Based Best Management Practices Selection</h4><p class="service-item-text">Spatial decision support and multicriteria analysis for wet-weather management.</p></div></li>
-<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Ballast Rock Provenance in East Mozambique</h4><p class="service-item-text">Earlier geoscience research involving fieldwork and geochemical analysis.</p></div></li></ul></section>
-<section class="service"><h3 class="h3 service-title">Selected Geospatial Coursework</h3><ul class="service-list"><li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Forecasting Flood Inundation</h4><p class="service-item-text">Geospatial coursework project.</p></div></li>
-<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Transit-Oriented Development in San Francisco</h4><p class="service-item-text">Urban spatial analysis coursework project.</p></div></li>
-<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Predicting Housing Prices in Mecklenburg County</h4><p class="service-item-text">Applied spatial analytics coursework project.</p></div></li>
-<li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Space-Time Prediction of Bike Share Demand</h4><p class="service-item-text">Spatial and temporal prediction coursework project.</p></div></li></ul></section>
-<section class="about-text"><p>Project reports and figures will be added after checking their original links.</p></section></article>
+      <article class="portfolio" data-page="research">
+<header><h2 class="h2 article-title">Research &amp; Selected Projects</h2></header>
+<section class="about-text"><p>Selected completed research and geospatial coursework projects.</p></section>
+<section class="service"><h3 class="h3 service-title">Previous Research</h3><ul class="legacy-projects">
+<li class="legacy-project"><a href="https://rumron.github.io/pdf/Delaware_River_Bacteria_Study.pdf" target="_blank" rel="noopener noreferrer"><h4>Delaware River Water Quality &amp; Recreational Suitability ↗</h4><span>Read final report (PDF)</span></a><div class="project-extra"><a href="https://arcg.is/04m9991" target="_blank" rel="noopener noreferrer">StoryMap ↗</a> · <a href="https://watercenter.sas.upenn.edu/research/projects/roadmap-delaware-river-upgrade-recreational-use-philadelphia-and-camden" target="_blank" rel="noopener noreferrer">Water Center project ↗</a></div></li>
+<li class="legacy-project"><a href="https://watercenter.sas.upenn.edu/research/projects/holistic-wet-weather-management-through-adaptive-volume-and-pollutant-source" target="_blank" rel="noopener noreferrer"><h4>Wet Weather Management &amp; BMP Selection ↗</h4><span>Water Center project page</span></a></li>
+<li class="legacy-project"><h4>Ballast Rock Provenance in East Mozambique</h4><span>Earlier geoscience research using fieldwork and geochemical analysis</span></li>
+</ul></section>
+<section class="service"><h3 class="h3 service-title">Selected Geospatial Coursework</h3><ul class="legacy-projects"><li class="legacy-project"><a href="https://rumron.github.io/pdf/MUSA675Midterm.html" target="_blank" rel="noopener noreferrer"><img src="https://rumron.github.io/images/MUSA675Midterm.png" alt="Forecasting Flood Inundation project preview" loading="lazy"><h4>Forecasting Flood Inundation ↗</h4><span>View full project report</span></a></li>
+<li class="legacy-project"><a href="https://rumron.github.io/pdf/MUSA508HW2.html" target="_blank" rel="noopener noreferrer"><img src="https://rumron.github.io/images/MUSA508HW2.png" alt="Transit-Oriented Development in San Francisco project preview" loading="lazy"><h4>Transit-Oriented Development in San Francisco ↗</h4><span>View full project report</span></a></li>
+<li class="legacy-project"><a href="https://rumron.github.io/pdf/MUSA508HW3.html" target="_blank" rel="noopener noreferrer"><img src="https://rumron.github.io/images/MUSA508HW3.png" alt="Predictive Policing for Chicago project preview" loading="lazy"><h4>Predictive Policing for Chicago ↗</h4><span>View full project report</span></a></li>
+<li class="legacy-project"><a href="https://rumron.github.io/pdf/MUSA508Midterm.html" target="_blank" rel="noopener noreferrer"><img src="https://rumron.github.io/images/MUSA508Midterm.png" alt="Predicting Housing Prices in Mecklenburg County project preview" loading="lazy"><h4>Predicting Housing Prices in Mecklenburg County ↗</h4><span>View full project report</span></a></li>
+<li class="legacy-project"><a href="https://rumron.github.io/pdf/MUSA508HW4.html" target="_blank" rel="noopener noreferrer"><img src="https://rumron.github.io/images/MUSA508HW4.png" alt="Targeting a Housing Subsidy project preview" loading="lazy"><h4>Targeting a Housing Subsidy ↗</h4><span>View full project report</span></a></li>
+<li class="legacy-project"><a href="https://rumron.github.io/pdf/MUSA508HW5.html" target="_blank" rel="noopener noreferrer"><img src="https://rumron.github.io/images/MUSA508HW5.gif" alt="Space-Time Prediction of Bike Share Demand project preview" loading="lazy"><h4>Space-Time Prediction of Bike Share Demand ↗</h4><span>View full project report</span></a></li></ul></section>
+<section class="service"><h3 class="h3 service-title">MSAG Capstone</h3><figure class="legacy-capstone"><img src="https://rumron.github.io/images/StoryMap.png" alt="MSAG Capstone StoryMap preview" loading="lazy"></figure></section>
+</article>
 
 
 
@@ -393,15 +411,10 @@
 <details class="game-group"><summary>Multiplayer Games<span class="game-count">7 games</span></summary><ul class="game-list"><li><span>Monster Hunter: Rise</span></li><li><span>Overwatch</span></li><li><span>PUBG</span></li><li><span>Stardew Valley</span></li><li><span>Remnant 2</span><span class="game-trophy" title="All achievements unlocked" aria-label="All achievements unlocked">🏆 <span class="trophy-label">100% achievements</span></span></li><li><span>Abiotic Factor</span></li><li><span>Minecraft Dungeons II</span></li></ul></details>
 <details class="game-group"><summary>MMORPG<span class="game-count">3 games</span></summary><ul class="game-list"><li><span>Final Fantasy XIV</span></li><li><span>MapleStory</span></li><li><span>JX3 Online (剑网3)</span></li></ul></details>
 </section>
-<section class="service"><h3 class="h3 service-title">Pets</h3>
-  <div class="about-text"><p>Meet the pets who have been part of my life. More photographs and stories are coming soon.</p></div>
-  <ul class="service-list">
-    <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Kuro</h4><p class="service-item-text">My Shiba Inu. <a href="https://www.instagram.com/kuro.21_/" target="_blank" rel="noopener noreferrer" style="color:var(--orange-yellow-crayola)">Kuro's Instagram ↗</a></p></div></li>
-    <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Rumble</h4><p class="service-item-text">Photos and memories coming soon.</p></div></li>
-    <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Lucky</h4><p class="service-item-text">In loving memory. ♡</p></div></li>
-    <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Wawa</h4><p class="service-item-text">In loving memory. ♡</p></div></li>
-  </ul>
-</section>
+<section class="service"><h3 class="h3 service-title">Pets</h3><div class="about-text"><p>Meet the pets who have been part of my life.</p></div><ul class="pet-gallery"><li class="pet-card"><img src="https://rumron.github.io/images/Kuro.jpeg" alt="Kuro" loading="lazy"><div><h4>Kuro</h4><p>My Shiba Inu. <a href="https://www.instagram.com/kuro.21_/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></p></div></li>
+<li class="pet-card"><img src="https://rumron.github.io/images/Rumble.jpeg" alt="Rumble" loading="lazy"><div><h4>Rumble</h4></div></li>
+<li class="pet-card"><img src="https://rumron.github.io/images/lucky.jpeg" alt="Lucky" loading="lazy"><div><h4>Lucky</h4><p>In loving memory ♡</p></div></li>
+<li class="pet-card"><img src="https://rumron.github.io/images/wawa.jpeg" alt="Wawa" loading="lazy"><div><h4>Wawa</h4><p>In loving memory ♡</p></div></li></ul></section>
 <section class="service"><h3 class="h3 service-title">Cities Through My Eyes</h3>
           <ul class="service-list">
             <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Gainesville</h4><p class="service-item-text">A growing collection of photos and urban observations.</p></div></li>
