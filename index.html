@@ -23,6 +23,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+.game-current{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;margin:0 0 14px;border-radius:14px;background:var(--border-gradient-onyx);border:1px solid var(--jet);color:var(--white-2);flex-wrap:wrap}
+.game-current>span{font-size:13px;color:var(--orange-yellow-crayola)}.game-current strong{font-size:17px}
+.game-legend{color:var(--light-gray);font-size:13px;margin-bottom:14px}
+.game-group{border:1px solid var(--jet);border-radius:14px;background:var(--eerie-black-1);margin-bottom:12px;padding:14px 18px;color:var(--white-2)}
+.game-group summary{cursor:pointer;font-size:15px;font-weight:500;display:flex;justify-content:space-between;gap:12px;list-style:revert}
+.game-group summary:focus-visible{outline:2px solid var(--orange-yellow-crayola);outline-offset:4px}
+.game-count{color:var(--light-gray-70);font-size:12px;font-weight:400}
+.game-list{margin-top:12px;display:grid;gap:8px}
+.game-list li{border-top:1px solid var(--jet);padding:11px 0 2px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px}
+.game-trophy{font-size:13px;white-space:nowrap;color:var(--orange-yellow-crayola)}
+.trophy-label{font-size:11px}
+@media(max-width:480px){.game-list li{align-items:flex-start;flex-direction:column;gap:4px}}
+</style>
 </head>
 
 <body>
@@ -371,14 +385,14 @@
         <header><h2 class="h2 article-title">Beyond Research</h2></header>
         <section class="about-text"><p>A little about the games I play, the pets I love, and the cities I explore. This page is a work in progress, with more photos and stories to come.</p></section>
         <section class="service"><h3 class="h3 service-title">Gaming</h3>
-          <ul class="service-list">
-            <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Currently Playing</h4><p class="service-item-text">GTA 6</p></div></li>
-            <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Single-player Games</h4><p class="service-item-text">Favorites and screenshots coming soon.</p></div></li>
-            <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Multiplayer Games</h4><p class="service-item-text">Games with friends. More soon.</p></div></li>
-            <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Online Social Games</h4><p class="service-item-text">Shared worlds and online communities. More soon.</p></div></li>
-          </ul>
-        </section>
-        <section class="service"><h3 class="h3 service-title">Pets</h3>
+<div class="about-text"><p>A growing collection of games I enjoy — from single-player adventures to co-op and online worlds.</p></div>
+<div class="game-current"><span>Currently Playing</span><strong>GTA 6</strong></div>
+<p class="game-legend">🏆 = All achievements unlocked</p>
+<details class="game-group"><summary>Single-player Games<span class="game-count">3 games</span></summary><ul class="game-list"><li><span>Phantom Blade Zero</span><span class="game-trophy" title="All achievements unlocked" aria-label="All achievements unlocked">🏆 <span class="trophy-label">100% achievements</span></span></li><li><span>Slay the Spire II</span></li><li><span>Cyberpunk 2077</span></li></ul></details>
+<details class="game-group"><summary>Multiplayer Games<span class="game-count">7 games</span></summary><ul class="game-list"><li><span>Monster Hunter: Rise</span></li><li><span>Overwatch</span></li><li><span>PUBG</span></li><li><span>Stardew Valley</span></li><li><span>Remnant 2</span><span class="game-trophy" title="All achievements unlocked" aria-label="All achievements unlocked">🏆 <span class="trophy-label">100% achievements</span></span></li><li><span>Abiotic Factor</span></li><li><span>Minecraft Dungeons II</span></li></ul></details>
+<details class="game-group"><summary>Online Social Games<span class="game-count">2 games</span></summary><ul class="game-list"><li><span>Final Fantasy 14</span></li><li><span>MapleStory</span></li></ul></details>
+</section>
+<section class="service"><h3 class="h3 service-title">Pets</h3>
   <div class="about-text"><p>Meet the pets who have been part of my life. More photographs and stories are coming soon.</p></div>
   <ul class="service-list">
     <li class="service-item"><div class="service-content-box"><h4 class="h4 service-item-title">Kuro</h4><p class="service-item-text">My Shiba Inu. <a href="https://www.instagram.com/kuro.21_/" target="_blank" rel="noopener noreferrer" style="color:var(--orange-yellow-crayola)">Kuro's Instagram ↗</a></p></div></li>
