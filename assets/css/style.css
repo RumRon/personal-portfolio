@@ -1950,13 +1950,25 @@ body { color: var(--white-2); }
   border-color: #a9d2d1;
 }
 .navbar-link {
-  color: #fbeae7;
-  text-shadow: 0 1px 2px rgba(27,77,80,.8), 0 0 5px rgba(27,77,80,.55);
+  position: relative;
+  color: #fffaf7;
+  text-shadow: 0 1px 2px rgba(27,77,80,.48), 0 0 3px rgba(27,77,80,.24);
 }
 .navbar-link.active,
 .navbar-link:hover,
-.navbar-link:focus-visible { color: #fbeae7; }
+.navbar-link:focus-visible { color: #fffaf7; }
 .navbar-link.active { font-weight: 600; }
+.navbar-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 16%;
+  right: 16%;
+  height: 3px;
+  border-radius: 3px;
+  background: #f6d0d9;
+  box-shadow: 0 1px 2px rgba(27,77,80,.2);
+}
 .info-content .title { background: #cfeaec; color: #263e40; }
 .icon-box::before { background: #fffaf8; }
 .social-item .social-link:hover { color: #28645f; }
