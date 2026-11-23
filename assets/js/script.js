@@ -32,7 +32,7 @@ const translations = {
   'Personal Interests': '个人兴趣',
   'Contact': '联系',
   'About Me': '关于我',
-  "Hi, I'm Rui Jiang, a PhD student in Urban and Regional Planning at the University of Florida. My interests lie at the intersection of urban analytics, artificial intelligence, sustainability, and the built environment.": '你好，我是 Rui Jiang，佛罗里达大学城市与区域规划专业的博士生。我的研究兴趣聚焦于城市分析、人工智能、可持续发展与建成环境的交叉领域。',
+  "Hi, I'm Rui Jiang, a PhD student in Urban and Regional Planning at the University of Florida. My interests lie at the intersection of urban analytics, artificial intelligence, sustainability, and the built environment.": '你好，我是姜睿，佛罗里达大学城市与区域规划专业的博士生。我的研究兴趣聚焦于城市分析、人工智能、可持续发展与建成环境的交叉领域。',
   'I am a member of': '我是',
   ', led by Dr. Yan Wang. My academic background spans environmental science, geospatial analysis, and urban planning.': '的成员，实验室由 Yan Wang 博士领导。我的学术背景涵盖环境科学、地理空间分析和城市规划。',
   'Here you can explore my background, selected completed projects, and interests beyond research.': '在这里，你可以了解我的学术经历、已完成的部分项目，以及研究之外的兴趣。',
