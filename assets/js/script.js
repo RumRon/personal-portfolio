@@ -135,7 +135,7 @@ while (walker.nextNode()) {
   const node = walker.currentNode;
   if (node.parentElement && node.parentElement.closest('script, style, noscript')) continue;
   const raw = node.nodeValue;
-  const english = raw.trim().replace(/\\s+/g, ' ');
+  const english = raw.trim().replace(/\s+/g, ' ');
   if (english && Object.prototype.hasOwnProperty.call(translations, english)) {
     nodes.push({ node, english, leading: raw.match(/^\s*/)[0], trailing: raw.match(/\s*$/)[0] });
   }
