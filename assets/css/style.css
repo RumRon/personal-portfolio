@@ -2033,3 +2033,43 @@ body { color: var(--white-2); }
 @media (min-width: 1024px) {
   .main-content > .navbar .navbar-list { justify-content: flex-end; }
 }
+
+/* Books: aligned title and author columns (both language versions). */
+#interest-books .book-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(110px, 30%);
+  align-items: baseline;
+  column-gap: 18px;
+  width: 100%;
+}
+#interest-books .book-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+#interest-books .book-author {
+  min-width: 0;
+  text-align: right;
+  justify-self: end;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  color: var(--light-gray-70);
+}
+#interest-books .book-current {
+  display: block;
+}
+#interest-books .book-current > span {
+  display: block;
+  margin-bottom: 10px;
+}
+#interest-books .book-current .book-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 420px) {
+  #interest-books .book-row {
+    grid-template-columns: minmax(0, 1fr) minmax(80px, 33%);
+    column-gap: 10px;
+  }
+  #interest-books .book-author { font-size: 12px; }
+}
