@@ -104,7 +104,7 @@ const translations = {
   'Currently reading': '正在阅读',
   'Books I love and titles on my reading list. Reviews and favorites will be added here.': '我喜欢的书与阅读清单，之后也会添加读书笔记。',
   'Currently Reading': '正在读',
-  'Tokio — Keigo Higashino': '《时生》— 东野圭吾',
+  'Galileo’s Troubles — Keigo Higashino': '《伽利略的苦恼》— 东野圭吾',
   'Reading List': '阅读清单',
   '3 entries': '3 项',
   'To Live — Yu Hua': '《活着》— 余华',
