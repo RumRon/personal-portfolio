@@ -56,6 +56,7 @@ const translations = {
   'Master of Science in Applied Geosciences': '应用地球科学理学硕士',
   'Environmental Science': '环境科学',
   'Market Analyst & ESG Specialist': '市场分析师与 ESG 专员',
+  "TSP: - Responsible for coordinating domestic and overseas market research for wind energy, industry benchmark analysis, project management, customer expansion, and customer relationship maintenance. - Assisting in evaluating and enhancing the company's performance in areas related to environmental impact, social responsibility, and governance practices, establishing the ESG framework, setting goals and visions, and disclosing information using scientifically quantified reporting methods.": 'TSP：负责协调国内外风能市场调研、行业标杆分析、项目管理、客户拓展与客户关系维护；协助评估并提升企业在环境影响、社会责任与治理方面的表现，建立 ESG 框架、制定目标与愿景，并以量化方法披露相关信息。',
   'Technical Director': '技术总监',
   'Sustainability Intern': '可持续发展实习生',
   'Research Assistant': '研究助理',
@@ -134,7 +135,7 @@ while (walker.nextNode()) {
   const node = walker.currentNode;
   if (node.parentElement && node.parentElement.closest('script, style, noscript')) continue;
   const raw = node.nodeValue;
-  const english = raw.trim();
+  const english = raw.trim().replace(/\\s+/g, ' ');
   if (english && Object.prototype.hasOwnProperty.call(translations, english)) {
     nodes.push({ node, english, leading: raw.match(/^\s*/)[0], trailing: raw.match(/\s*$/)[0] });
   }
